@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Liga Inggris</title>
+    <meta name="description" content="Liga Inggris 2021" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://crests.football-data.org">
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#31004a" />
+    <script type="text/javascript" src="js/idb.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigasi -->
+    <nav style="background-color: #31004a;" role="navigation">
+        <div class="nav-wrapper container">
+            <a href="index.html" class="brand-logo" style="width: fit-content; height: fit-content;">Premier League</a>
+            <a href="#" class="sidenav-trigger" data-target="nav-mobile">☰</a>
+            <ul class="topnav right hide-on-med-and-down"></ul>
+            <ul class="sidenav" id="nav-mobile"></ul>
+        </div>
+    </nav>
+    <!-- Akhir Navigasi -->
+
+    <div class="container">
+        <div class="row ">
+            <div class="col s12 m12 ">
+                <h3 class="header center-align">Semua Tim</h3>
+                <div id="teams"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/materialize.min.js "></script>
+    <script src="js/nav.js "></script>
+    <script src="js/db.js "></script>
+    <script src="js/api.js "></script>
+    <script src="js/loadSw.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            teams();
+        });
+    </script>
+</body>
+
+</html>
